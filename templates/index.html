@@ -1,0 +1,14 @@
+<!--This file displays the calculator functionalities-->
+<html>
+     <h1> Welcome to the Flask Calculator </h1>
+     <form action="{{ url_for('calculate') }}" method="post">
+        <p>Enter the first no : <input type=number name=n1>
+        <p>Enter the second no : <input type=number name=n2>
+        <p>Enter the choice :
+        <p><input type="radio" name="choice" value="add" checked>ADD
+        <p><input type="radio" name="choice" value="substract">Substract
+        <p><input type="radio" name="choice" value="multiply">Multiply
+        <p><input type="radio" name="choice" value="divide">Divide
+        <p><input type="submit" value= Calculate>
+      </form>
+</html>
